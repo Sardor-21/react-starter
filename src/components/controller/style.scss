@@ -1,0 +1,16 @@
+.fields {
+	&__input {
+		border-radius: 4px;
+	}
+
+	&__error {
+		border: 1px solid #ff4d4f;
+
+		&-message {
+			color: #ff4d4f;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+		}
+	}
+}

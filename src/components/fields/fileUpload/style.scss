@@ -1,0 +1,23 @@
+.filemeneger {
+	border: 2px dashed #ccc;
+	text-align: center;
+	border-radius: 4px;
+	padding: 15px;
+	&:hover {
+		cursor: pointer;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	&_img {
+		max-width: 102px;
+		min-width: 102px;
+		img {
+			height: 102px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}

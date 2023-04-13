@@ -11,6 +11,6 @@ export const mainRoutes = {
 export const routes = [
 	{
 		path: "/",
-		element: <></>
+		element: <Home />
 	}
 ];

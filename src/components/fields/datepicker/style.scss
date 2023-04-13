@@ -1,0 +1,163 @@
+.react-datepicker__close-icon {
+	&::after {
+		color: #000;
+		background-color: transparent;
+		font-size: 26px;
+	}
+}
+.react-datepicker {
+	* {
+		font-family: "Roboto", sans-serif;
+	}
+
+	select {
+		border: 1px solid rgba(0, 0, 0, 0.6) !important;
+	}
+
+	select,
+	option {
+		outline: none;
+		border-radius: 5px !important;
+	}
+
+	&__header {
+		background-color: #fff;
+	}
+
+	&__today-button {
+		background-color: #fff;
+	}
+}
+
+.day-picker {
+	$this: &;
+
+	&-small {
+		.DayPickerInput {
+			height: 30px;
+		}
+	}
+
+	&-normal {
+		.DayPickerInput {
+			height: 60px;
+		}
+	}
+
+	&__container {
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%);
+		pointer-events: none;
+
+		&.extra-small {
+			width: 15px;
+			height: 15px;
+		}
+	}
+}
+
+.react-datepicker-wrapper {
+	.react-datepicker__input-container {
+		input {
+			height: 100%;
+			width: 100%;
+			border-radius: 4px;
+			outline: none;
+			padding: 18px 10px;
+			font-size: 16px;
+			border: 1px solid rgba(23, 31, 38, 0.2);
+			transition: all 0.2s;
+			&:hover {
+				border: 1px solid #4096ff;
+			}
+			&.errors {
+				border: 1px solid #ff4d4f;
+			}
+			&::placeholder {
+				color: rgba(23, 31, 38, 0.8);
+				font-size: 15px;
+				.dark & {
+					color: #929fb1;
+				}
+			}
+
+			.dark & {
+				color: #aeb4c0;
+			}
+
+			&.small {
+				height: 30px;
+			}
+
+			&.normal {
+				height: 63px;
+			}
+
+			&.extra-small {
+				padding: 8px;
+				font-size: 12px;
+			}
+		}
+	}
+
+	&__container {
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+}
+
+.react-datepicker__next,
+.react-datepicker__prev {
+	padding: 5px;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s;
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.react-datepicker__prev {
+	margin-right: 5px;
+}
+
+.react-datepicker__next {
+	margin-left: 5px;
+}
+
+.form-group.has-error .form-input__bordered {
+	border: none;
+}
+
+.z-index-99 {
+	z-index: 99999999;
+}
+
+.border-r-5 {
+	border-radius: 5px !important;
+}
+.simple-select__error {
+	font-weight: 500;
+	font-size: 12px;
+}
